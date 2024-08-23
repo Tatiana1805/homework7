@@ -1,0 +1,158 @@
+.footer-conteiner {
+    height: 280px;
+    max-width: 1478px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 120px;
+}
+.footer-quote {
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 178%;
+    color: #fff;
+}
+
+.copyright {
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 178%;
+    color: #fff;
+    opacity: 0.5;
+    position: absolute;
+    margin-top: 209px;
+}
+
+ul {
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 133%;
+    color: #fbd784;
+}
+
+li {
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 178%;
+    font-family: "Poppins", sans-serif;
+    color: #fff;
+    list-style-type: none;
+}
+
+.footer-ul {
+    display: flex;
+}
+
+@media (max-width: 1536px) {
+    
+    .footer-conteiner {
+        width: 100%;
+    }
+}
+
+@media (max-width: 1024px) {
+    .footer-conteiner {
+        max-width: 960px;
+    }
+
+    .footer-quote {
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 200%;
+        width: 380px;
+    }
+
+    li {
+        font-size: 16px;
+        line-height: 200%;
+        padding-top: 16px;
+    }
+
+    .copyright {
+        margin-top: 301px;
+    }
+
+}
+
+@media (max-width: 768px) {
+    .footer-conteiner {
+        max-width: 704px;
+    }
+
+    ul {
+        font-size: 20px;
+        line-height: 160%;
+    }
+
+    .copyright {
+        font-size: 14px;
+        line-height: 229%;
+    }
+
+    .footer-quote {
+        max-width: 262px;
+    }
+
+}
+
+@media (max-width: 480px) {
+
+    footer {
+        padding-top: 100px;
+        margin-top: -41px;
+    }
+
+    .footer-conteiner {
+        max-width: 440px;
+        display: flex;
+        flex-wrap: wrap;
+        height: 531px;
+        padding-bottom: 0;
+    }
+
+    .footer-quote {
+        font-weight: 500;
+        font-size: 12px;
+        line-height: 267%;
+        max-width: 440px;
+        margin-bottom: 0;
+    }
+
+    .footer-ul {
+        display: block;
+    }
+
+    li {
+        font-weight: 500;
+        font-size: 13px;
+        line-height: 100%;
+    }
+
+    ul {
+        margin-top: 20px;
+        padding: 0;
+    }
+
+    .copyright {
+        padding-top: 195px;
+    }
+
+}
+
+@media (max-width: 320px) {
+    footer {
+        max-width: 320px;
+    }
+
+    .footer-conteiner {
+        max-width: 300px;
+        margin:  0 10px 26px 10px;
+    }
+
+    .footer-quote {
+        max-width: 300px;
+    }
+}

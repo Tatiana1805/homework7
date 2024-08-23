@@ -1,0 +1,277 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    position: absolute;
+}
+
+.header-container {
+    display: flex;
+    align-items: center;
+    width: 100vw;
+    height: 37px;
+    margin: 64px 91px;
+    justify-content: space-around;
+    font-family: "Poppins", sans-serif;
+    font-size: 18px;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+.logo {
+    text-transform: uppercase;
+
+}
+
+.header-section__el {
+    padding-right: 30px;
+
+}
+
+.header-account {
+    display: flex;
+    justify-content: end;
+}
+
+.follow {
+    writing-mode: vertical-lr;
+}
+ .social-network {
+    padding-top: 10px;
+ }
+ 
+ .tittle {
+    width: 950px;
+    height: 419px;
+    margin: 0 auto;
+ }
+
+.header-account__login {
+    margin-left: 8px;
+}
+
+ .tittle-subject {
+    font-family: "Poppins", sans-serif;
+    font-weight: 800;
+    font-size: 18px;
+    letter-spacing: 0.33em;
+    text-transform: uppercase;
+    color: #FBD784;
+ }
+
+ .tittle-subject::before {
+    content: "";
+    border-top: 2px solid #FBD784;
+    display: inline-flex;
+    position: relative;
+    top: -10px;
+    width: 72px;
+    margin-right: 37px;
+ }
+
+ .header-burger {
+    display: none
+}
+.popup {
+    display: none;
+}
+
+ @media (max-width: 1024px) {
+    .header-container {
+        width: 95vw;
+        margin: 64px 61.5px;
+    
+    }
+ }
+
+ @media (max-width: 768px) {
+    .header-container {
+        width: 86vw;
+        height: 37px;
+        justify-content: space-between;
+    }
+
+    .header-section {
+        display: none;
+    }
+
+    .header-account {
+        display: none;
+    }
+
+    .header-burger {
+        display: block;
+    }
+
+    .popup{
+        position: fixed;
+        width: 100vw;
+        height: 265px;
+        background-color: #fff;
+        display: flex;
+        top: 0;
+        padding: 64px 67px 64px 61px;
+        box-sizing: border-box;
+        transition: 0.3s;
+        border-radius: 0 0 10px 10px;
+        z-index: 1;
+    }
+
+    body > .popup {
+        opacity: 0.8;
+    }
+
+    .popup-conteiner {
+        width: 84vw;
+    }
+
+    .popup.open {
+        top: -100%;
+    }
+
+    a.header-section__bg, a.header-account__bg {
+        color: black;
+        font-family: "Poppins", sans-serif;
+        font-weight: 700;
+        font-size: 18px;
+    }
+
+    .header-section__bg {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        padding-bottom: 15px;
+    }
+
+    .close-bg {
+        width: 37px;
+        height: 37px;
+    } 
+
+    .logo-burger {
+        display: flex;
+        align-content: flex-start;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        width: 84vw;
+        height: 42px;
+    }
+
+    .header-section__burger {
+        display: flex;
+        gap: 41px;
+        width: 330px;
+        margin-top: 64px;
+    }
+
+    .header-account__burger {
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        margin-top: -45px;
+    }
+
+    .svg {
+        margin-right: 8px;
+    }
+ }
+
+ @media (max-width: 480px) {
+    .header-container {
+        max-width: 92vw;
+        margin: 61px 20px;
+    }
+
+    .popup {
+        max-width: 480px;
+        height: 350px;
+        padding: 0;
+
+    }
+
+    .popup-conteiner {
+        margin: 64px 41px 57px 38px;
+    }
+
+    .popup-conteiner .logo-burger {
+        max-width: 400px;
+    }
+
+    .header-section__burger {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .header-account__burger {
+        margin-top: -160px;
+    }
+ }
+
+ @media (max-width: 320px) {
+    .header {
+        max-width: 320px;
+    }
+
+    .header-container {
+        margin-left: 10px;
+        margin-top: 61px;
+        margin-right: 19px;
+    }
+
+    .popup {
+        max-width: 320px;
+    }
+
+    .popup-conteiner {
+        max-width: 270px;
+    }
+
+    .header-section__burger {
+        margin-top: 18px;
+
+    }
+
+    a.header-section__bg {
+        font-weight: 600;
+        font-size: 14px;
+        gap: 10px;
+    }
+
+    .popup-conteiner .logo-burger {
+        max-width: 270px;
+    }
+
+    a.header-account__bg {
+        font-size: 16px;
+    }
+
+    .header-account__burger {
+        margin: 0;
+        justify-content: start;
+        margin-top: 40px;
+    }
+
+    div.social-bg {
+        display: flex;
+        width: 24px;
+        height: 150px;
+        margin-left: 87%;
+        margin-top: -61%;
+        gap: 14px;
+        flex-direction: column;
+    }
+
+    .follow-bg {
+        writing-mode: vertical-lr;
+        font-family: "Poppins", sans-serif;
+        font-weight: 600;
+        font-size: 16px;
+        color: #354147;
+    }
+
+ }
